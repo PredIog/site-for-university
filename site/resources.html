@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Домашняя старница</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h2>Инструмент онлайн-медиатек</h2>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="blog.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+<div class="resource-card">
+            <h1>Полезные ресурсы</h1>
+            <p class="subtitle">Материалы, которые помогли нам в разработке проекта</p>
+        </div>
+
+        <!-- Ресурс 1: TuneMyMusic -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">🎵</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">Tune My Music</h2>
+                    <a href="https://www.tunemymusic.com/ru" class="resource-link" target="_blank">tunemymusic.com →</a>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Анализ интерфейса и пользовательского пути при переносе плейлистов</li>
+                    <li>Изучение списка поддерживаемых платформ (Spotify, Apple Music, YouTube Music, Deezer)</li>
+                    <li>Принципы отображения прогресса переноса и обработки ошибок</li>
+                    <li>Идеи для дизайна главной страницы и карточек сервисов</li>
+                </ul>
+                <p class="resource-note">🔍 Tune My Music — один из самых популярных сервисов для переноса плейлистов. Spotify даже интегрировал его в своё приложение как встроенный инструмент импорта [citation:9][citation:10].</p>
+            </div>
+        </div>
+
+        <!-- Ресурс 2: Soundiiz -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">🎧</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">Soundiiz</h2>
+                    <a href="https://soundiiz.com" class="resource-link" target="_blank">soundiiz.com →</a>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Изучение работы с API различных стриминговых сервисов [citation:8]</li>
+                    <li>Понимание ограничений: 200 треков на плейлист в бесплатной версии</li>
+                    <li>Принципы синхронизации и обновления плейлистов между сервисами</li>
+                    <li>Модель монетизации (freemium) и структуру тарифов</li>
+                </ul>
+                <p class="resource-note">🔍 Soundiiz существует с 2013 года и за это время перенёс более 220 миллионов плейлистов [citation:8]. Это ценный источник знаний о масштабировании подобных сервисов.</p>
+            </div>
+        </div>
+
+        <!-- Ресурс 3: Free Your Music -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">📱</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">Free Your Music</h2>
+                    <a href="https://freeyourmusic.com" class="resource-link" target="_blank">freeyourmusic.com →</a>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Поддержка отечественных сервисов — Яндекс.Музыка и ВКонтакте [citation:4]</li>
+                    <li>Функция автоматической синхронизации каждые 15 минут</li>
+                    <li>Механизм «одного клика» для исправления несовпадающих треков</li>
+                    <li>Кроссплатформенность (iOS, Android, Windows, macOS, Linux)</li>
+                </ul>
+                <p class="resource-note">🔍 Free Your Music — один из немногих сервисов, который бесплатно работает с Яндекс.Музыкой и ВКонтакте [citation:4]. Для нас это важный референс, так как мы ориентируемся на российских пользователей.</p>
+            </div>
+        </div>
+
+        <!-- Ресурс 4: GitHub Open Source проекты -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">🐙</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">GitHub (Open Source)</h2>
+                    <a href="https://github.com" class="resource-link" target="_blank">github.com →</a>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Изучение архитектуры open-source проектов для переноса плейлистов [citation:1][citation:3][citation:6]</li>
+                    <li>Понимание OAuth-авторизации через Spotify Developer Dashboard [citation:1]</li>
+                    <li>Примеры работы с YouTube Music API (через headers_auth.json) [citation:1]</li>
+                    <li>Архитектурные решения: Node.js + Express, AWS Lambda, PostgreSQL, SQS [citation:6]</li>
+                    <li>Использование библиотек: spotipy, ytmusicapi для Python [citation:1]</li>
+                </ul>
+                <p class="resource-note">🔍 На GitHub есть готовые реализации переноса плейлистов. Изучение их кода помогло нам избежать типичных ошибок при проектировании собственной архитектуры [citation:1][citation:3][citation:6].</p>
+            </div>
+        </div>
+
+        <!-- Ресурс 5: SongShift -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">🔄</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">SongShift</h2>
+                    <a href="https://songshift.com" class="resource-link" target="_blank">songshift.com →</a>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Изучение автоматической синхронизации плейлистов между сервисами [citation:7]</li>
+                    <li>Функция «умного сопоставления» треков (smart matching)</li>
+                    <li>Принципы работы мобильного приложения (iOS-first подход)</li>
+                    <li>Механизмы объединения нескольких плейлистов в один</li>
+                </ul>
+                <p class="resource-note">🔍 SongShift интегрирован с Apple Music как официальный инструмент импорта плейлистов [citation:7]. Это показывает, что даже крупные игроки используют сторонние решения.</p>
+            </div>
+        </div>
+
+        <!-- Ресурс 6: Документация API -->
+        <div class="resource-card">
+            <div class="resource-header">
+                <div class="resource-icon">📘</div>
+                <div class="resource-info">
+                    <h2 class="resource-title">Документация API музыкальных сервисов</h2>
+                    <div class="resource-links-group">
+                        <a href="https://developer.spotify.com/documentation/web-api" class="resource-link" target="_blank">Spotify API →</a>
+                        <a href="https://yandex.ru/dev/music-api/" class="resource-link" target="_blank">Яндекс Музыка API →</a>
+                        <a href="https://vk.com/dev/music" class="resource-link" target="_blank">VK API →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="resource-content">
+                <h3>Что взяли:</h3>
+                <ul>
+                    <li>Понимание форматов запросов и ответов API</li>
+                    <li>Изучение лимитов и квот на количество запросов</li>
+                    <li>Структуру данных плейлистов, треков, исполнителей и альбомов</li>
+                    <li>Методы аутентификации (OAuth 2.0, токены доступа и обновления)</li>
+                </ul>
+                <p class="resource-note">🔍 Официальная документация — основной источник для разработки интеграций с музыкальными сервисами. Без неё невозможно корректно реализовать перенос данных.</p>
+            </div>
+        </div>
+</main>
+
+
+<footer>
+    <p>© 2026 Проектная деятельность</p>
+</footer>
+
+</body>
+</html>
